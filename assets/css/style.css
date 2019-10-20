@@ -30,7 +30,8 @@ html, body {
   width: 25;
   padding: 15px;
   margin: 20px;
-  background-color: greenyellow;
+  background-color:palevioletred;
+  text-align: center;
 }
 
 .row:after {
@@ -44,6 +45,12 @@ img {
     height: 125px;
     object-fit: cover;
 }
+
+hr {
+  border: 3px solid maroon;
+  border-radius: 2px;
+}
+
 
 
 

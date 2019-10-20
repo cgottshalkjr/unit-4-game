@@ -32,6 +32,7 @@ function resetGame() {
     var wins = 0;
     var losses = 0;
     var score = 0;
+    var buttonClicked = true;
 }
 
 function getRndInteger(min, max) {
@@ -39,21 +40,38 @@ function getRndInteger(min, max) {
 }
 // console.log(getRndInteger(19,120));
 
-$(document).ready(function (){
+$(document).ready(function () {
 
+    $("#randomNumb").text(computerNumb);
 
     $("#box1").on("click", function () {
-        button1 += $(this).val();
-        });
+        score = score + button1;
+        $("#yourScore").text(score);
+    });
+
+    $("#box2").on("click", function () {
+        score = score + button2;
+        $("#yourScore").text(score);
+    });
+
+    $("#box3").on("click", function () {
+        score = score + button3;
+        $("#yourScore").text(score);
+    });
+
+    $("#box4").on("click", function () {
+        score = score + button4;
+        $("#yourScore").text(score);
+    });
 
 
-        if (score === computerNumb) {
-            $("#youWin").text()
-          }
-      
-          else if (score >= computerNumb) {
-            
-          }
+    if (score === computerNumb) {
+        $("#youWin").text()
+    }
+
+    else if (score >= computerNumb) {
+
+    }
 
 
 });
