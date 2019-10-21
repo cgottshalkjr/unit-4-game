@@ -40,7 +40,27 @@ html, body {
     clear: both;
 }
 
+
+button {
+  border: none;
+  outline: none;
+  background-color: palevioletred;
+  cursor: pointer;
+  padding: 15px 25px;
+
+}
+
+button:hover {
+    transform: translateY(4px);
+}
+
+button:active {
+    border: 2px solid palevioletred;
+    box-shadow: 5px 5px maroon;
+}
+
 img {
+    position: relative;
     width: 125px;
     height: 125px;
     object-fit: cover;
